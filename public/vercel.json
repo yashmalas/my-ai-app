@@ -1,0 +1,15 @@
+{
+  "buildCommand": "npm install",
+  "outputDirectory": "public",
+  "functions": {
+    "netlify/functions/*.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    }
+  ]
+}
